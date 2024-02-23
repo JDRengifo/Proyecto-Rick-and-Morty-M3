@@ -1,0 +1,93 @@
+.carta { 
+    
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 300px;
+    border-radius: 10%;
+    margin: 20px;
+    border: 50px solid rgb(211, 205, 205);
+    background-size: cover;
+    background-position: center;
+ }
+  
+
+.numeroDeCarta {
+    display: flex;
+    position: relative;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    font-size: 9mm;
+  
+  }
+
+  img {
+    position: absolute;
+    border-radius: 4%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+  }
+
+  .nombre {
+    position: relative;
+    top: 99%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    font-size: 7mm;
+    color:  blue;
+  }
+ 
+  .botonEliminar {
+    position: absolute;
+    top: 1%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: firebrick;
+    font-size: 33px;
+    padding: 10px 20px;
+  }
+
+  .botonCorazon {
+    position: absolute;
+    top: 100%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 33px;
+    padding: 10px 20px;
+  }
+ 
+  
+  .status {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    
+  }
+ 
+  .gender {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(14, 56, 56);
+  }
+ 
+  .species {
+     writing-mode: vertical-lr;
+     text-orientation: upright;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+ 
+  
+ 

@@ -1,0 +1,35 @@
+.detailDiv {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.detailDatos {
+    width: 800px;
+    height: 1100px;
+}
+
+.detailImagen {
+    background-color: blue;
+    display: flex;
+    position: relative;
+    width: 700px;
+    height: 1000px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 50px solid rgb(29, 139, 57);
+    background-size: cover;
+    background-position: center;
+
+}
+
+h3 {
+    color: rgb(21, 204, 218);
+    font-size: 4em;
+}
+
+.name {
+    font-style: italic;
+    font-size: 7em;
+    color: rgb(184, 64, 174);
+}
