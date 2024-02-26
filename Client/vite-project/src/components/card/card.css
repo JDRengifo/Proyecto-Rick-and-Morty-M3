@@ -1,33 +1,43 @@
 .carta { 
-    
+  background: linear-gradient(to top right, red, blue, yellow, green);
+    /* background-color: rgb(163, 55, 55); */
     display: flex;
+    justify-content: center;
     position: relative;
     width: 200px;
     height: 300px;
     border-radius: 10%;
     margin: 20px;
-    border: 50px solid rgb(211, 205, 205);
+    border: 20px solid rgb(8, 4, 4);
     background-size: cover;
     background-position: center;
+    transition: 0.5s;
+    box-shadow: 5px 15px 25px rgb(249, 249, 252, 0.5) ;
+ }
+
+ .carta:hover {
+    transform: scale(1.1);
+    transition: 1s;
  }
   
 
 .numeroDeCarta {
     display: flex;
     position: relative;
-    top: 85%;
+    top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
     font-family: cursive;
-    font-size: 9mm;
+    font-size: 1px;
   
   }
 
   img {
+    top: 15%;
     position: absolute;
-    border-radius: 4%;
+    border-radius: 10%;
     width: 100%;
-    height: 100%;
+    height: 70%;
     object-fit: cover;
     margin: auto;
     display: block;
@@ -35,29 +45,29 @@
 
   .nombre {
     position: relative;
-    top: 99%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 85%;
+    
+    /* transform: translate(-50%, -50%); */
     font-family: cursive;
-    font-size: 7mm;
-    color:  blue;
+    font-size: 17px;
+    color:  rgb(249, 249, 252);
   }
  
   .botonEliminar {
     position: absolute;
-    top: 1%;
-    left: 100%;
+    top: 6%;
+    left: 85%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0);
-    color: firebrick;
+    color: rgb(15, 13, 5);
     font-size: 33px;
     padding: 10px 20px;
   }
 
   .botonCorazon {
     position: absolute;
-    top: 100%;
-    left: 7%;
+    top: 6%;
+    left: 15%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0);
     font-size: 33px;
@@ -69,24 +79,27 @@
     position: absolute;
     top: 50%;
     left: 40%;
-    
+    font-size: 1px;
   }
  
   .gender {
     position: absolute;
     top: 65%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(14, 56, 56);
+    /* transform: translate(-50%, -50%); */
+    /* color: rgb(14, 56, 56); */
+    font-size: 1px;
   }
  
   .species {
-     writing-mode: vertical-lr;
-     text-orientation: upright;
+     /* writing-mode: vertical-lr; */
+     /* text-orientation: upright; */
     position: absolute;
     top: 50%;
     left: 30%;
     transform: translate(-50%, -50%);
+    font-size: 1px;
+  
   }
  
   

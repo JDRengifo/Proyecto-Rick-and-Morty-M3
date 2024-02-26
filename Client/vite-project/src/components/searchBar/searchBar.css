@@ -1,6 +1,6 @@
 .container {
     padding: 20px;
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     width: 90%;
     align-items: center;
@@ -8,4 +8,15 @@
     
 }
   
-
+.botonAgregar { 
+    color: aliceblue;
+    margin: 20px;
+    height: 60px;
+    background-color:black;
+}
+#myInput {
+    border-radius: 5%;
+    font-size: 1,5em;
+    height: 60px;
+    margin: 10px;
+}

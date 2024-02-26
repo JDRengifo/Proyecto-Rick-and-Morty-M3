@@ -42,7 +42,7 @@ console.log(props)
 
    return(
       <div  className = "carta">
-         <h2>key = {id}</h2>
+         {/* <h2>{id}</h2> */}
           <button  className='botonEliminar' onClick={() => {props.onClose(props.id)}}>X</button>
           <h2 className='numeroDeCarta'>{id}</h2>
          <Link to={`/detail/${id}`}>

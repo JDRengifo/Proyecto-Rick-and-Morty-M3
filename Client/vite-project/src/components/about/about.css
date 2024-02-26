@@ -1,0 +1,15 @@
+.fotoDiv {
+    
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 13%;
+    left: 23%;
+    border-radius: 10%;
+    margin: 20px;
+    border: 20px solid rgb(8, 4, 4);
+    background-size: cover;
+    background-position: center;
+}

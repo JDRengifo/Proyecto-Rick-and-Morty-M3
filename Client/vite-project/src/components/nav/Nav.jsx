@@ -8,15 +8,15 @@ function Nav(props){
         <div className="containerButton">
         
            <button className="botonNav">
-            <Link to='/about'>about</Link>
+            <Link to='/about'>ABAUT</Link>
           </button>
           
           <button className="botonNav">
-            <Link to='/home'>home</Link>
+            <Link to='/home'>HOME</Link>
           </button>
          
           <button className="botonNav">
-            <Link to='/favorites'>favorites</Link>
+            <Link to='/favorites'>FAVORITES</Link>
           </button>
 
           <SearchBar onSearch={props.onSearch} />

@@ -21,7 +21,7 @@ const handleChange = (event)=> {
             onChange={handleChange}
             value={id} 
             id='myInput' 
-            className='imput' 
+            className='input' 
             type='search' placeholder="id.."
          />
          <button className='botonAgregar' onClick={handleClick}>AGREGAR</button>

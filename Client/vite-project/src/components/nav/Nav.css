@@ -1,6 +1,6 @@
 .containerButton {
     position: relative;
-    background-color: blueviolet;
+    /* background-color: rgb(226, 153, 43); */
     width: 100%;
     height: 100px;
     display: flex;
@@ -8,9 +8,7 @@
     gap: 10;
     
 }
-
-
-button {
-    margin: 15px;
+.botonNav {
+    margin: 20px;
+    background-color: black;
 }
-
