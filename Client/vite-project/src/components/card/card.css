@@ -12,7 +12,7 @@
     background-size: cover;
     background-position: center;
     transition: 0.5s;
-    box-shadow: 5px 15px 25px rgb(249, 249, 252, 0.5) ;
+    box-shadow: 5px 15px 25px rgba(112, 6, 6, 0.5) ;
  }
 
  .carta:hover {

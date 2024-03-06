@@ -1,7 +1,10 @@
 import React from "react";
 import { useState } from "react";
+import ReactPlayer from "react-player"
 import './form.css'
 import validation from "../validation/validation";
+import RandMVideo from "../../utils/RandMVideo.mp4"
+import Titulo_Rick_and_Morty from "../../utils/Titulo_Rick_and_Morty.png"
 
 
 function Form({ login }){
@@ -31,10 +34,12 @@ function Form({ login }){
     
     
     return(
+      <div className="totalForm">
+        <h2 className="autor">by: Rengifo José</h2>
       <div className="formdiv">
         <form  onSubmit={onSubmit}>
             <div className="imagenDiv">
-            <img src="https://th.bing.com/th?id=OIP.gS0sLM8mRFXS_WzQmDMY5QHaLQ&w=202&h=308&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="" />
+            <img src="https://th.bing.com/th?id=OIP.gS0sLM8mRFXS_WzQmDMY5QHaLQ&w=202&h=308&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" className="image" alt="" />
             </div>
 
             <div className="inputDiv">
@@ -68,6 +73,24 @@ function Form({ login }){
             </div>
         </form>
         </div>
+        <div className="videoDiv">
+          <h1>"Rick and Morty Collection"</h1>
+          {/* <img src={Titulo_Rick_and_Morty} alt="Foto de Jose"/> */}
+        <div className="caja3" >
+          <ReactPlayer 
+            url={RandMVideo}
+            width='100%'
+            height='100%'
+            muted
+            playing
+            // controls
+            loop
+            
+            />
+            </div>
+        </div>
+      </div>
+
     )
 }
 export default Form;
