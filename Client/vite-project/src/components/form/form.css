@@ -47,6 +47,7 @@
 } 
 
 .totalForm {
+   margin-top: 30px;
    background-color: black;
    position: relative;
    display: flex;
@@ -78,4 +79,9 @@
    position: absolute;
    left: 70%;
    top: 85%;
+}
+
+.newRegister {
+   background-color: rgb(178, 177, 178);
+   margin-top: 20px;
 }

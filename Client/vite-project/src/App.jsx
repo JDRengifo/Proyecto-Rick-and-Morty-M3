@@ -10,6 +10,7 @@ import About from './components/about/About.jsx';
 import Detail from './components/detail/Detail.jsx';
 import Form from './components/form/Form.jsx';
 import Favorites from './components/favorites/Favorites.jsx';
+import CrearUsuario from './components/crearUsuario/CrearUsuario.jsx';
 
 
 
@@ -49,23 +50,26 @@ function App() {
    
   }catch(error){throw new TypeError(error)}
 }
-//   function login(userData) {
-//     const { email, password } = userData;
-//     const URL = 'http://localhost:3001/rickandmorty/login/';
-//     axios(URL + `?email=${email}&password=${password}`).then(({ data }) => {
-//        const { access } = data;
-//        console.log(data)
-//        setAccess(access);  
-//        access && navigate('/home');
-//     })
-//      .catch((error) => console.log('error', error));
-//  }
-  // function login(userData){
-  //   if(userData.password === PASSWORD && userData.email === EMAIL){
-  //     setAccess(true);
-  //     navigate('/home');
-  //   }
-  // }
+ 
+async function reLogin(userDataCrear) {
+  const { email, password } = userDataCrear;
+  const URL = 'http://localhost:3001/rickandmorty/register/';
+  try{
+    await axios.post(URL, {email:`${email}`,password:`${password}`});
+        window.alert('Usuario Creado')
+    //  const { access } = data;
+       setAccess(false);  
+       access && navigate('/');
+   
+  }catch(error){throw new TypeError(error)}
+}
+
+const handleCrear = (event) => {
+  event.preventDefault();
+  setAccess(true);
+  navigate("/register");
+  };
+ 
 
 
   const onSearch = (id) => {
@@ -86,13 +90,14 @@ function App() {
   return (
   <>
       <div className='App' >
-        {location.pathname !== '/' ? <Nav onSearch={onSearch}/> : undefined}
+        {location.pathname !== '/' && location.pathname !== '/register'? <Nav onSearch={onSearch}/> : undefined}
         
         <Routes>
-          <Route path='/' element={<Form login={login}/>}/>
+          <Route path='/' element={<Form login={login} handleCrear={handleCrear}/>}/>
           <Route path='/home' element={<Cards characters={characters} onClose={onClose}/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/favorites' element={<Favorites/>}/>
+          <Route path='/register' element={<CrearUsuario reLogin={reLogin}/>}/>
           <Route path='/detail/:id' element={<Detail/>}/>
         </Routes>
       </div> 

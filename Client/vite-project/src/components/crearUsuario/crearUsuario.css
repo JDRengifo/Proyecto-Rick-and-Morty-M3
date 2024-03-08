@@ -1,0 +1,59 @@
+.registerdiv {
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.tituloRegister {
+  color: rgb(55, 0, 255);
+}
+
+.fotoRam {
+    border-radius: 50%;
+    width: 100%;
+   height: 100%;
+    
+} 
+
+.fotoRegistro {
+    width: 200px;
+    height: 200px;
+    left: 40%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    font-weight: bold;
+    position: absolute;
+  }
+  .fotoRegistro::before {
+    content: "";
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      45deg, green, black, white, yellow, red,
+      green, black, white, yellow, red);
+      background-size: 800%;
+      filter: blur(8px);
+      animation: glowing 20s linear infinite;
+  }
+   @keyframes glowing {
+    0%{
+      background-position: 0 0;
+    }
+    50%{
+      background-position: 400% 0;
+    } 
+    100%{
+      background-position: 0 0;
+    }
+    
+   }

@@ -7,7 +7,7 @@ import RandMVideo from "../../utils/RandMVideo.mp4"
 import Titulo_Rick_and_Morty from "../../utils/Titulo_Rick_and_Morty.png"
 
 
-function Form({ login }){
+function Form({ login, handleCrear }){
     const [input, setInput] = useState({
       email:'',
       password: ''
@@ -70,12 +70,13 @@ function Form({ login }){
 
               <hr style={{borderStyle: "none"}}/>
               <button type="submit" disabled={!input.email || !input.password || errors.email || errors.password}>INGRESAR</button>
+              <br />
+              <button className="newRegister" onClick={handleCrear}>Registrarse como nuevo Usuario</button>
             </div>
         </form>
         </div>
         <div className="videoDiv">
           <h1>"Rick and Morty Collection"</h1>
-          {/* <img src={Titulo_Rick_and_Morty} alt="Foto de Jose"/> */}
         <div className="caja3" >
           <ReactPlayer 
             url={RandMVideo}

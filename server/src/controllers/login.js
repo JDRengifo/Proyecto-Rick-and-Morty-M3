@@ -4,7 +4,7 @@ const { User } = require('../../src/DB_connection')
 const login = async (req, res) => {
 
 const { email, password } = req.query;
-// console.log({ email, password })
+console.log({ email, password })
 if(!email || !password || email.length  === 0 || password.length === 0){
     res.status(400).send('Faltan datos');
 } else {
@@ -12,7 +12,7 @@ if(!email || !password || email.length  === 0 || password.length === 0){
         const userFound = await User.findOne({
             where: {email: email}
         })
-        // console.log(userFound)
+        
        try {
            if(userFound.dataValues.password === password){
                res.status(200).json({access: true});

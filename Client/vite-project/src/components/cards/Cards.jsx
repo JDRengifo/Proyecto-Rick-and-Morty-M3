@@ -2,7 +2,7 @@ import Card from "../card/Card"
 import './cards.css'
 
 export default function Cards({characters, onClose}) {
-      console.log(characters)
+   
    return(<div id="cards2" className="contenedor">
          {characters.map((item) =>{
             return(
